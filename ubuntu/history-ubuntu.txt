@@ -1,0 +1,45 @@
+    1  whoami
+    2  exit
+    3  whoami
+    4  pwd
+    5  clear
+    6  adduser devops
+    7  cat /etc/passwd
+    8  clear
+    9  cat /etc/passwd
+   10  useradd --help
+   11  clear
+   12  ls
+   13  visudo
+   14  export EDITOR=vi
+   15  visudo
+   16  id vagrant
+   17  cd /etc/sudoers.d/
+   18  ls
+   19  cd
+   20  clear
+   21  clear
+   22  useradd delta
+   23  lsb_release -a
+   24  visudo
+   25  export EDITOR=vi
+   26  visudo
+   27  su - delta
+   28  sudo --help
+   29  clear
+   30  lsb_release -a
+   31  clear
+   32  wget http://archive.ubuntu.com/ubuntu/pool/universe/t/tree/tree_1.7.0-3_amd64.deb
+   33  ls
+   34  lsb_release -a
+   35  dpkg -i tree_1.7.0-3_amd64.deb 
+   36  tree
+   37  cd /var/log/
+   38  ls
+   39  tree
+   40  cd
+   41  clear
+   42  apt install apache2 -y
+   43  apt remove apache2
+   44  apt search java
+   45  history > /vagrant/history-ubuntu.txt

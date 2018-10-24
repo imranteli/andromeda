@@ -1,0 +1,367 @@
+    1  man ls
+    2  cd /etc/
+    3  ls
+    4  cd /temp
+    5  clear
+    6  cd
+    7  ls
+    8  cd /home/vagrant/
+    9  ls
+   10  cd
+   11  ls
+   12  pwd
+   13  ls
+   14  vi anaconda-ks.cfg 
+   15  cp anaconda-ks.cfg anaconda-ks.backup
+   16  vi anaconda-ks.backup 
+   17  clear
+   18  nano anaconda-ks.backup 
+   19  yum install nano
+   20  ls
+   21  nano anaconda-ks.backup 
+   22  clear
+   23  cd /etc/
+   24  ls
+   25  clear
+   26  pwd
+   27  ls
+   28  ls -l
+   29  clear
+   30  ls -l
+   31  ls -lt
+   32  touch mytestfile.txt
+   33  ls -lt
+   34  clear
+   35  ls -lt
+   36  date
+   37  ls -ltr
+   38  clear
+   39  cd /dev
+   40  ls -ltr
+   41  clear
+   42  ls -l sda
+   43  file sda
+   44  file /dev/sda
+   45  ls -ltr
+   46  cd
+   47  clear
+   48  ls
+   49  mkdir /home/vagrant/linux-practices
+   50  mkdir -p /home/vagrant/linux-practices/devdir/uat/prod 
+   51  vi /home/vagrant/linux-practices/devdir/uat/prod/
+   52  vi /home/vagrant/linux-practices/devdir/uat/prod/testlink
+   53  cd /home/vagrant/linux-practices/devdir/uat/prod/
+   54  ls
+   55  vi testlink 
+   56  cd
+   57  pwd
+   58  ls
+   59  ln -s /home/vagrant/linux-practices/devdir/uat/prod/testlink linktotestfile
+   60  ls -ltr
+   61  clear
+   62  ls
+   63  cat linktotestfile 
+   64  vi linktotestfile 
+   65  cat linktotestfile 
+   66  cat /home/vagrant/linux-practices/devdir/uat/prod/testlink 
+   67  clear
+   68  ls -ltr
+   69  cd /tmp/
+   70  cat /root/linktotestfile 
+   71  clear
+   72  cd
+   73  ls
+   74  rm /home/vagrant/linux-practices/devdir/uat/prod/testlink 
+   75  ls -ltr
+   76  touch /home/vagrant/linux-practices/devdir/uat/prod/testlink
+   77  ls -ltr
+   78  clear
+   79  rm /home/vagrant/linux-practices/devdir/uat/prod/testlink 
+   80  ls -ltr
+   81  unlink linktotestfile 
+   82  ls -ltr
+   83  clear
+   84  ls
+   85  ls -li
+   86  clear
+   87  ls -la
+   88  clear
+   89  ls
+   90  vi anaconda-ks.cfg 
+   91  clear
+   92  grep Kickstart anaconda-ks.cfg 
+   93  grep kickstart anaconda-ks.cfg 
+   94  grep -i kickstart anaconda-ks.cfg 
+   95  clear
+   96  ls
+   97  rm anaconda-ks.backup 
+   98  ls
+   99  clear
+  100  ls
+  101  grep Kickstart *
+  102  vi install.log
+  103  grep libgcc *
+  104  clear
+  105  ls
+  106  mkdir -p dev/test/staging
+  107  vi dev/test/staging/myfile.txt
+  108  ls
+  109  grep Python *
+  110  grep Python * -R
+  111  grep python * -R
+  112  grep -i python * -R
+  113  clear
+  114  history
+  115  cd /
+  116  ls
+  117  clear
+  118  cd /etc/
+  119  ls
+  120  clear
+  121  cd /var/log/
+  122  ls
+  123  cd /
+  124  cd
+  125  clear
+  126  ls
+  127  less anaconda-ks.cfg 
+  128  more anaconda-ks.cfg 
+  129  clear
+  130  ls
+  131  head anaconda-ks.cfg 
+  132  cat /etc/passwd
+  133  clear
+  134  head /etc/passwd
+  135  tail /etc/passwd
+  136  clear
+  137  head -2 /etc/passwd
+  138  head -20 /etc/passwd
+  139  clear
+  140  tail -1 /etc/passwd
+  141  ls
+  142  vi zootopia
+  143  cat zootopia 
+  144  sed 's/Fox/Sloth/g' zootopia 
+  145  cat zootopia 
+  146  sed -i 's/Fox/Sloth/g' zootopia 
+  147  cat zootopia 
+  148  clear
+  149  sed 's/Rabbit/Dinosaur/g' zootopia 
+  150  vi zootopia 
+  151  clear
+  152  cat zootopia 
+  153  head -2 zootopia 
+  154  head -2 zootopia > frst2animals.txt
+  155  cat frst2animals.txt 
+  156  clear
+  157  tail -2 zootopia > frst2animals.txt
+  158  cat frst2animals.txt 
+  159  head -2 zootopia > frst2animals.txt
+  160  cat frst2animals.txt 
+  161  head -4 zootopia >> frst4animals.txt
+  162  cat frst4animals.txt 
+  163  clear
+  164  tail -2 /etc/passwd
+  165  tail -2 /etc/passwd > lstusrs.txt
+  166  cat lstusrs.txt 
+  167  tail -4 /etc/passwd >> lstusrs.txt
+  168  cat lstusrs.txt 
+  169  clear
+  170  find / -name passwd
+  171  find /etc -name passwd
+  172  whoami
+  173  cat /etc/redhat-release 
+  174  useradd devops
+  175  id devops
+  176  clear
+  177  cat /etc/passwd | grep devops
+  178  cat /etc/passwd | wc -l
+  179  ls /etc
+  180  ls -ltr /etc/
+  181  ls -ltr /etc/ | head -3
+  182  ls -ltr /etc/ | tail -4
+  183  clear
+  184  ls -ltr /etc/ | tail -4 
+  185  ls -ltr /etc/ | tail -4 | grep group
+  186  ls -ltr /etc/ | tail -4 | grep group > /tmp/learnpipe
+  187  clear
+  188  cat /etc/passwd | grep devops
+  189  id devops
+  190  cat /etc/group | grep devops
+  191  clear
+  192  passwd devops
+  193  su - devops
+  194  ls /home/
+  195  useradd alpha
+  196  passwd alpha
+  197  ls /home/
+  198  id alpha
+  199  su - alpha
+  200  cd /etc/skel
+  201  ls
+  202  ls -a
+  203  vi testskel
+  204  cd
+  205  useradd beta
+  206  passwd beta
+  207  clear
+  208  cd /home/beta/
+  209  ls
+  210  cat testskel 
+  211  ls -la
+  212  cd /etc/skel/
+  213  pwd
+  214  cd
+  215  clear
+  216  cd /home/
+  217  ls
+  218  ls devops/
+  219  ls alpha/
+  220  ls beta/
+  221  cd /etc/skel/
+  222  pwd
+  223  ls
+  224  touch test{1..10}
+  225  ls
+  226  cd
+  227  clear
+  228  ls /etc/skel/
+  229  useradd gamma
+  230  passwd gamma
+  231  ls /home/gamma/
+  232  ls /home/devops/
+  233  cd /etc/skel/
+  234  ls
+  235  rm -rf *
+  236  ls
+  237  cd
+  238  clear
+  239  groupadd experiment
+  240  cat /etc/group | grep exp
+  241  id devops
+  242  id alpha
+  243  id beta
+  244  vi /etc/group
+  245  id devops
+  246  id beta
+  247  id alpha
+  248  id gamma
+  249  userdel devops
+  250  ls /home/
+  251  userdel -r alpha
+  252  ls /home/
+  253  clear
+  254  groupdel experiment
+  255  ls
+  256  ls -l
+  257  vi /etc/group
+  258  cd /opt/
+  259  ls -ltr
+  260  id gamma
+  261  clear
+  262  chmod g+w mydir
+  263  ls -ltr 
+  264  su - gamma
+  265  cd
+  266  clear
+  267  ll
+  268  rm -rf *
+  269  ls
+  270  clear
+  271  touch lear123
+  272  ll
+  273  chwon vagrant:vagrant lear123 
+  274  chown vagrant:vagrant lear123 
+  275  ll
+  276  chmod u+x lear123 
+  277  chmod o-r lear123 
+  278  ll
+  279  clear
+  280  ll
+  281  chmod 770 lear123 
+  282  ll
+  283  chmod 640 lear123 
+  284  ll
+  285  chmod 777 lear123 
+  286  ll
+  287  clear
+  288  cd /opt/
+  289  ll
+  290  chown root:root mydir
+  291  ll
+  292  ls -ltr mydir/
+  293  chown root:root mydir -R
+  294  ls -ltr mydir/
+  295  clear
+  296  ls -ltr
+  297  chmod 750 mydir
+  298  ls -ltr
+  299  cd mydir/
+  300  ls -ltr
+  301  cd ..
+  302  clear
+  303  chmod 750 mydir
+  304  ls -ltr mydir/
+  305  chmod 750 mydir -R
+  306  ls -ltr mydir/
+  307  cd
+  308  clear
+  309  ls
+  310  exit
+  311  clear
+  312  ls /bin/
+  313  ls -ltr
+  314  clear
+  315  cd /bin/
+  316  ls -ltr
+  317  cd
+  318  clear
+  319  ls
+  320  vi frst.sh
+  321  ls -ltr frst
+  322  ls -ltr frst.sh 
+  323  chmod u+x frst.sh 
+  324  ./frst.sh 
+  325  chmod u-x frst.sh 
+  326  ./frst.sh 
+  327  clear
+  328  ls
+  329  ls -ltr
+  330  cd /opt/
+  331  clear
+  332  ls
+  333  ll
+  334  mkdir mydir
+  335  ls -ltr
+  336  groupadd experiment
+  337  chown vagrant:experiminet mydir
+  338  chown vagrant:experiment mydir
+  339  ls -ltr
+  340  clear
+  341  su - vagrant
+  342  exit
+  343  id
+  344  cat /etc/passwd
+  345  clear
+  346  exit
+  347  whoami
+  348  exit
+  349  clea
+  350  clear
+  351  rpm -qa
+  352  clear
+  353  wget http://mirror.centos.org/centos/7/os/x86_64/Packages/tree-1.6.0-10.el7.x86_64.rpm
+  354  ls
+  355  mkdir -p /test123/cec/deck 
+  356  clear
+  357  tree
+  358  ls
+  359  rpm -ivh tree-1.6.0-10.el7.x86_64.rpm 
+  360  yum install tree
+  361  tree
+  362  ls
+  363  clear
+  364  yum install httpd
+  365  yum remove httpd
+  366  yum search java
+  367  history > /vagrant/history-centos.txt

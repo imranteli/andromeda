@@ -1,0 +1,1 @@
+{"virtualbox":{"/opt/vmdatadir":{"guestpath":"/opt/vmdatadir","hostpath":"C:/Training/vagrant/hostdatadir","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Training/vagrant/memvm","disabled":false,"__vagrantfile":true}}}
